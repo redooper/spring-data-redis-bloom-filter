@@ -26,7 +26,6 @@ docker pull redislabs/rebloom:2.0.3
 ```shell
 docker run -d \
 -p 6380:6379 \
--v ~/etc/localtime:/etc/localtime:ro \
 --name local-redisbf \
 --restart=always \
 redislabs/rebloom:2.0.3
